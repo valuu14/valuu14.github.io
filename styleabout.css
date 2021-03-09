@@ -1,0 +1,443 @@
+body {
+  margin: 0.5px 0px 0px 0px;
+  background-color: black;
+  font-size: 28px;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+#nothing{
+  display: block;
+  position: fixed;
+  top: -5px;
+  right: 10px;
+  width: 100px;
+  height: 60px;
+  z-index: 2;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: black;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  border-radius: 5%;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #f1f1f1;
+  color: white;
+}
+
+/* header */
+
+.HeaderStyle{
+  background-color: #212121;
+	color: white;
+  position: relative;
+  top: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+
+.TextHeaderStyle{
+  padding: 15px auto; 
+  margin: 30px;
+}
+
+h1{
+  font-family: 'Englebert';
+  margin: 2px;
+  padding: 0;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+h4{
+  font-family: 'Englebert';
+  margin: 2px;
+  padding: 0;
+  text-align: center;
+}
+
+
+/* footer */
+
+.footer{
+  background-color: #006E6D;
+  color: white;
+  font-family: 'Englebert';
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 0;
+  animation: myanimation 2s ease-in-out 0s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes myanimation{
+  0%{
+    background-color: #006E6D;
+  }
+  100%{
+    background-color: #2a4646;
+  }
+}
+
+section p{
+  padding: 5px 0 5px 0;
+}
+
+/*Card image*/
+
+.card{
+  transition: 0.3s;
+  background: linear-gradient(to top, #292F33 10%, #181818 100%);
+  width: 300px;
+  border-radius: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.card:hover {
+  box-shadow: 2px 2px rgba(255,255,255,0.5);
+}
+
+.container {
+  padding: 5px 20px;
+  color: white;
+  font-family: 'Englebert';
+  margin: auto; 
+}
+
+
+.img{
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+}
+
+.para{
+	font-size: 18px;
+  margin: 0; 
+}
+
+h5{
+	margin: 0;
+}
+
+.content {
+  padding: 16px;
+  color: white;
+  font-size: 18px;
+  border-radius: 15px; 
+  background-color: #212121;
+  margin: 15px 15px;
+}
+
+.Life{
+  color: #F0EAD6;
+  text-align: left;
+  font-family: serif;
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+  margin-left: 12px;
+  margin-bottom: 1px;
+}
+
+section h4{
+  color: white;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.styleP1{
+  color: white;
+  font-size: 16px;
+  font-family: serif;
+  text-indent: 30px;
+  text-align: justify;
+  padding: 5px 15px;
+}
+
+.levels:link{
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.levels:visited{
+  color:  #577284;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.levels:hover{
+  color: #008080;
+  text-decoration: none;
+  font-style: italic;
+}
+
+
+.section{
+  display: flex;
+  flex-direction: row;
+  flex-basis: 90%;
+  padding: 20px 0;
+}
+
+.box1{
+  flex: 1;
+  order: 1;
+  position: fixed;
+  z-index: 2;
+}
+
+.box2{
+  flex: 5;
+  order: 2;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #292F33 50%, #000000 100%);
+  padding: 10px 10px;
+  margin-left: 100px;
+}
+
+.box3{
+  flex: 2;
+  order: 3;
+  align-content: center;
+}
+
+.box4{
+  flex: 2;
+  order: 1;
+  align-content: center;
+}
+
+.box5{
+  flex: 5;
+  order: 2;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #292F33 50%, #000000 100%);
+  padding: 10px 10px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.box6{
+  flex: 5;
+  order: 2;
+  border-radius: 10px;
+  background: linear-gradient(to top, #292F33 50%, #000000 100%);
+  padding: 10px 10px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.box7{
+  flex: 2;
+  order: 2;
+  align-content: center;
+}
+
+.box8{
+  flex: 5;
+  order: 1;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #292F33 50%, #000000 100%);
+  padding: 10px 10px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.box7 .img:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+
+/*side navbar*/
+/* Style the links inside the sidenav */
+#mySidenav a {
+  display: block;
+  position: relative; /* Position them relative to the browser window */
+  left: -100px; /* Position them outside of the screen */
+  top: 0px;
+  transition: 0.3s; /* Add transition on hover */
+  padding: 20px 15px 0 15px; /* 15px padding */
+  width: 125px; /* Set a specific width */
+  height: 40px;
+  text-decoration: none; /* Remove underline */
+  font-size: 16px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#about {
+  top: 200px;
+  background-color: #4CAF50;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#blog {
+  top: 260px;
+  background-color: #2196F3; /* Blue */
+  margin-top: 10px;
+  text-align: center;
+}
+
+#projects {
+  top: 320px;
+  background-color: #f44336; /* Red */
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* bottom page */
+
+footer{
+  background-color: #0a0a0c;
+  margin: 0;
+}
+
+.signature{
+  display: block;
+  width: 250px;
+  height: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 15px;
+}
+
+hr{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 5px solid rgba(209,197,169,.4);
+    margin: 0 0;
+    padding: 0;
+    border-top-right-radius: 70%;
+    border-top-left-radius: 70%;
+}
+
+/* social media icons*/
+
+table{
+  margin: 0 auto;
+  border: none;
+}
+
+.social{
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fa {
+  padding: 15px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa-facebook {
+  color: white;
+}
+
+.fa-facebook:hover{
+  opacity: 0.7;
+  color: #3B5998;
+}
+
+.fa-twitter {
+  color: white;
+}
+
+.fa-twitter:hover {
+  opacity: 0.7;
+  color: #55ACEE;
+}
+
+.fa-youtube {
+  color: white;
+}
+
+.fa-youtube:hover {
+  opacity: 0.7;
+  color: #bb0000;
+}
+
+.fa-instagram{
+  color: white;
+}
+
+.fa-instagram:hover {
+  opacity: 0.7;
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );*/
+}
+
+.fa-spotify{
+  /*background-color: black;*/
+  color: white;
+}
+
+.fa-spotify:hover {
+  opacity: 0.7;
+  color: green;
+}
+
+.fa-apple{
+  color: white;
+  /*background-color: black;*/
+}
+
+.fa-apple:hover {
+  opacity: 0.7;
+  color: rgba(246, 244, 239, 0.9);
+}
+
+footer p{
+  color: rgba(209,197,169,.4);
+  font-size: 12px;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 10px;
+}

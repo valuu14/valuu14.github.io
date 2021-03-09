@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Avicii</title>
+	<link rel="stylesheet" type="text/css" href="stylemusic.css">
+  <link rel="icon" href="Pics/icon.png">
+  <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="music.html">Music</a>
+  <a href="legacy.html">Legacy</a>
+  <a href="media.html">Media</a>
+</nav>
+
+<section>  
+  <a href="index.html" id="nothing"><img src="Pics/Avicii_Logo_White.png"></a>
+</section>
+
+<section class="footer">
+  <p>&bull; music &bull;</p>
+</section>
+
+  
+<div class="box">
+  <img src="Pics/true.jpg" class="true">
+  <button id="true" class="collapsible">true</button>
+  <div class="content">
+    <ul class="list">
+      <li><a href="Music/Wake me up.html">&bull;Wake me up</a></li>
+      <li><a href="Music/You make me.html">&bull;You make me</a></li>
+      <li><a href="Music/Hey brother.html">&bull;Hey brother</a></li>
+      <li><a href="Music/Addicted to you.html">&bull;Addicted to you</a></li>
+      <li><a href="Music/Dear boy.html">&bull;Dear boy</a></li>
+      <li><a href="Music/Liar liar.html">&bull;Liar liar</a></li>
+      <li><a href="Music/Shame on me.html">&bull;Shame on me</a></li>
+      <li><a href="Music/Lay me down.html">&bull;Lay me down</a></li>
+      <li><a href="Music/Hope theres someone.html">&bull;Hope there's someone</a></li>
+      <li><a href="Music/Heart upon my sleeve.html">&bull;Heart upon my sleeve</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="box">
+  <img src="Pics/stories.jpg" class="true">
+  <button id="stories" class="collapsible">stories</button>
+  <div class="content"> 
+    <ul class="list">
+      <li><a href="Music/WaitingForLove.html">&bull;Waiting for love</a></li>
+      <li><a href="Music/Talk to myself.html">&bull;Talk to myself</a></li>
+      <li><a href="Music/Ten more days.html">&bull;Ten more days</a></li>
+      <li><a href="Music/Touch me.html">&bull;Touch me</a></li>
+      <li><a href="Music/For a better day.html">&bull;For a better day</a></li>
+      <li><a href="Music/Broken arrows.html">&bull;Broken arrows</a></li>
+      <li><a href="Music/True believer.html">&bull;Ture believer</a></li>
+      <li><a href="Music/City lights.html">&bull;City lights</a></li>
+      <li><a href="Music/Pure grinding.html">&bull;Pure grinding</a></li>
+      <li><a href="Music/Sunset Jesus.html">&bull;Sunset Jesus</a></li>
+      <li><a href="Music/Cant catch me.html">&bull;Can't catch me</a></li>
+      <li><a href="Music/Somewhere in Stockholm.html">&bull;Somewhere in Stockholm</a></li>
+      <li><a href="Music/Trouble.html">&bull;Trouble</a></li>
+      <li><a href="Music/Gonna love ya.html">&bull;Gonna love ya</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="box">
+  <img src="Pics/Avicii 01.jpg" class="true">
+  <button id="A01" class="collapsible">Avīci 01</button>
+  <div class="content">
+    <ul class="list">
+      <li><a href="Music/Friend of mine.html">&bull;Friend of mine</a></li>
+      <li><a href="Music/Lonely together.html">&bull;Lonely together</a></li>
+      <li><a href="Music/You be love.html">&bull;You be love</a></li>
+      <li><a href="Music/Without you.html">&bull;Without you</a></li>
+      <li><a href="Music/What would I change it to.html">&bull;What would I change it to</a></li>
+    </ul>
+  </div>
+</div>
+
+<script type="text/javascript">
+  var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+<div>
+  <hr>
+</div>
+
+<footer>
+  <div>
+    <img src="Pics/Avicii sign.png" class="signature">
+  </div>
+  <table class="social">
+    <tr>
+      <td><a href="https://www.facebook.com/avicii" class="fa fa-facebook" target="_blank"></a></td>
+      <td><a href="https://twitter.com/Avicii" class="fa fa-twitter" target="_blank"></a></td>
+      <td><a href="https://www.youtube.com/channel/UCPHjpfnnGklkRBBTd0k6aHg" class="fa fa-youtube" target="_blank"></a></td>
+      <td><a href="https://www.instagram.com/avicii/?hl=en" class="fa fa-instagram" target="_blank"></a></td>
+      <td><a href="https://open.spotify.com/artist/1vCWHaC5f2uS3yhpwWbIA6" class="fa fa-spotify" target="_blank"></a></td>
+      <td><a href="https://itunes.apple.com/us/artist/avicii/298496035" class="fa fa-apple"></a></td>
+    </tr>
+  </table>
+  <p>© 2019 Valentin Molnar. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Avicii</title>
+	<link rel="icon" href="Pics/icon.png">
+	<link rel="stylesheet" type="text/css" href="stylemedia.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="music.html">Music</a>
+  <a href="legacy.html">Legacy</a>
+  <a href="media.html">Media</a>
+</nav>
+
+<section>  
+  <a href="index.html" id="nothing"><img src="Pics/Avicii_Logo_White.png"></a>
+</section>
+
+<section class="footer">
+  <p>&bull; photo gallery &bull;</p>
+</section>
+
+<div class="container">
+
+  <div class="mySlides">
+      <img src="Pics/aviciiiheartradiomusicawards.jpg" class="img">
+  </div>
+
+  <div class="mySlides">
+      <img src="Pics/Avicii Liam.jpg" class="img">
+  </div>
+
+  <div class="mySlides">
+      <img src="Pics/Avicii Fanart.jpg" class="img">
+  </div>
+
+  <div class="mySlides">
+      <img src="Pics/not_used.jpg" class="img">
+  </div>
+
+  <div class="mySlides">
+      <img src="Pics/Tim.jpg" class="img">
+  </div>
+
+  <div class="mySlides">
+       <img src="Pics/Studio Mode.jpg" class="img">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="Pics/aviciiiheartradiomusicawards.jpg" style="width:100%" onclick="currentSlide(1)" alt="Avicii at Heart Radio Music Awards">
+    </div>
+    <div class="column"> 
+      <img class="demo cursor" src="Pics/Avicii Liam.jpg" style="width:100%" onclick="currentSlide(2)" alt="Tim's dog - Liam">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Pics/Avicii Fanart.jpg" style="width:100%" onclick="currentSlide(3)" alt="Fanart from Avicii's Instagram page">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Pics/not_used.jpg" style="width:100%" onclick="currentSlide(4)" alt="Avicii 2016">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Pics/Tim.jpg" style="width:100%" onclick="currentSlide(5)" alt="Tim 2017">
+    </div> 
+    <div class="column">
+      <img class="demo cursor" src="Pics/Studio Mode.jpg" style="width:100%" onclick="currentSlide(6)" alt="&quot;Studio Mode&quot;">
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+<div>
+	<hr>
+</div>
+
+<footer>
+  <div>
+    <img src="Pics/Avicii sign.png" class="signature">
+  </div>
+	<table class="social">
+		<tr>
+			<td><a href="https://www.facebook.com/avicii" class="fa fa-facebook" target="_blank"></a></td>
+			<td><a href="https://twitter.com/Avicii" class="fa fa-twitter" target="_blank"></a></td>
+			<td><a href="https://www.youtube.com/channel/UCPHjpfnnGklkRBBTd0k6aHg" class="fa fa-youtube" target="_blank"></a></td>
+			<td><a href="https://www.instagram.com/avicii/?hl=en" class="fa fa-instagram" target="_blank"></a></td>
+      		<td><a href="https://open.spotify.com/artist/1vCWHaC5f2uS3yhpwWbIA6" class="fa fa-spotify" target="_blank"></a></td>
+      		<td><a href="https://itunes.apple.com/us/artist/avicii/298496035" class="fa fa-apple"></a></td>
+		</tr>
+	</table>
+  <p>© 2019 Valentin Molnar. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

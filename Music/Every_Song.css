@@ -1,0 +1,52 @@
+body{
+  background-color: #212121;
+  margin: 0;
+  padding: 0;
+}
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  display: block;
+  min-width: 70%; 
+  min-height: 70%;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+}
+
+@media screen and (max-width: 1700px){
+  #myVideo{
+    width: 70%;
+    min-height: 70%;
+  }
+}
+
+.black{
+  position: absolute;
+  top: 0;
+  background-color: black;
+  height: 75px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.arrow{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 25px;
+  height: 25px;
+  border-top: 10px solid white;
+  border-left: 10px solid white;
+  transform: rotate(-45deg);
+  border-radius: 20%;
+  margin: 0;
+}
+
+h2{
+  text-align: center;
+  color: white;
+  padding-top: 5px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Trouble by Avicii</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" href="../Pics/icon.png">
+    <link rel='stylesheet' type='text/css' media='screen' href='Every_Song.css'>
+</head>
+<body>
+	<div class="black">
+		<a href="../music.html"><div class="arrow"></div></a>
+		<h2>Trouble by Avicii</h2>
+	</div>
+<!-- The video -->
+<video autoplay loop controls id="myVideo">
+  <source src="../Videos/Avicii - Trouble.mp4" type="video/mp4">
+</video>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</body>
+</html>
